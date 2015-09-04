@@ -14,11 +14,11 @@
         <key>background</key>
         <string>#0a0a0a</string>
         <key>caret</key>
-        <string>#CCCCCC</string>
+        <string>#cccccc</string>
         <key>foreground</key>
-        <string>#CCCCCC</string>
+        <string>#a0a0a0</string>
         <key>invisibles</key>
-        <string>#6A6A6A</string>
+        <string>#6a6a6a</string>
         <key>lineHighlight</key>
         <string>#111111</string>
         <key>selection</key>
@@ -44,7 +44,7 @@
       <key>name</key>
       <string>Foreground</string>
       <key>scope</key>
-      <string>keyword.operator.class, constant.other, source.php.embedded.line</string>
+      <string>keyword.operator.class, source.php.embedded.line</string>
       <key>settings</key>
       <dict>
         <key>fontStyle</key>
@@ -55,9 +55,9 @@
     </dict>
     <dict>
       <key>name</key>
-      <string>Variable, String Link, Tag Name</string>
+      <string>Variable</string>
       <key>scope</key>
-      <string>variable, support.other.variable, string.other.link, entity.name.tag, entity.other.attribute-name, meta.tag, declaration.tag</string>
+      <string>variable, support.other.variable</string>
       <key>settings</key>
       <dict>
         <key>foreground</key>
@@ -66,35 +66,146 @@
     </dict>
     <dict>
       <key>name</key>
-      <string>Number, Constant, Function Argument, Tag Attribute, Embedded</string>
+      <string>String Link</string>
       <key>scope</key>
-      <string>constant.numeric, constant.language, support.constant, constant.character, variable.parameter, punctuation.section.embedded, keyword.other.unit</string>
+      <string>string.other.link</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>
+        <string>#b8b65a</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>Tag Name</string>
+      <key>scope</key>
+      <string>entity.name.tag, meta.tag, declaration.tag</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>
+        <string>#628A60</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>Tag Attribute Name</string>
+      <key>scope</key>
+      <string>entity.other.attribute-name</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>
+        <string>#34707e</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>Keyword other unit</string>
+      <key>scope</key>
+      <string>keyword.other.unit</string>
       <key>settings</key>
       <dict>
         <key>fontStyle</key>
         <string></string>
         <key>foreground</key>
-        <string>#59995d</string>
+        <string>#ff7fe5</string>
       </dict>
     </dict>
     <dict>
       <key>name</key>
-      <string>Class, Support</string>
+      <string>Embedded</string>
       <key>scope</key>
-      <string>entity.name.class, entity.name.type.class, support.type, support.class</string>
+      <string>punctuation.section.embedded</string>
       <key>settings</key>
       <dict>
         <key>fontStyle</key>
         <string></string>
         <key>foreground</key>
-        <string>#a0a0a0</string>
+        <string>#d15151</string>
       </dict>
     </dict>
     <dict>
       <key>name</key>
-      <string>String, Symbols, Inherited Class, Markup Heading</string>
+      <string>Constant</string>
       <key>scope</key>
-      <string>string, constant.other.symbol, entity.other.inherited-class, markup.heading</string>
+      <string>constant.language, support.constant, constant.character, constant.other</string>
+      <key>settings</key>
+      <dict>
+        <key>fontStyle</key>
+        <string></string>
+        <key>foreground</key>
+        <string>#34707e</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>Number</string>
+      <key>scope</key>
+      <string>constant.numeric</string>
+      <key>settings</key>
+      <dict>
+        <key>fontStyle</key>
+        <string></string>
+        <key>foreground</key>
+        <string>#628A60</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>Function Argument</string>
+      <key>scope</key>
+      <string>variable.parameter</string>
+      <key>settings</key>
+      <dict>
+        <key>fontStyle</key>
+        <string></string>
+        <key>foreground</key>
+        <string>#ff7fe5</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>Class</string>
+      <key>scope</key>
+      <string>entity.name.class, entity.name.type.class</string>
+      <key>settings</key>
+      <dict>
+        <key>fontStyle</key>
+        <string></string>
+        <key>foreground</key>
+        <string>#d15151</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>Class type, Support</string>
+      <key>scope</key>
+      <string>support.type, support.class</string>
+      <key>settings</key>
+      <dict>
+        <key>fontStyle</key>
+        <string></string>
+        <key>foreground</key>
+        <string></string>
+      </dict>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>Inherited class</string>
+      <key>scope</key>
+      <string>entity.other.inherited-class</string>
+      <key>settings</key>
+      <dict>
+        <key>fontStyle</key>
+        <string></string>
+        <key>foreground</key>
+        <string>#d15151</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>String, Symbols, Markup Heading</string>
+      <key>scope</key>
+      <string>string, constant.other.symbol, markup.heading</string>
       <key>settings</key>
       <dict>
         <key>fontStyle</key>
@@ -116,9 +227,42 @@
     </dict>
     <dict>
       <key>name</key>
-      <string>Function, Special Method, Block Level</string>
+      <string>Function</string>
       <key>scope</key>
-      <string>entity.name.function, meta.function-call, support.function, keyword.other.special-method, meta.block-level</string>
+      <string>entity.name.function</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>
+        <string>#b0af6d</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>Support Function</string>
+      <key>scope</key>
+      <string>support.function</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>
+        <string>#a0a0a0</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>Function call</string>
+      <key>scope</key>
+      <string>meta.function-call</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>
+        <string>#a0a0a0</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>Special Method, Block Level</string>
+      <key>scope</key>
+      <string>keyword.other.special-method, meta.block-level</string>
       <key>settings</key>
       <dict>
         <key>foreground</key>
